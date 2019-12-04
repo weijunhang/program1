@@ -1,0 +1,154 @@
+<!--index.wxml-->
+<!-- 顶部导航栏 -->
+<view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
+  <text>药任务</text>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+
+<!-- 搜索栏 -->
+<view class="sourch">
+  <view class="courch-left">
+    <text>上海</text>
+    <image src="../image/down.png"></image>
+  </view>
+
+  <view class="courch-bet">
+    <image src="../image/sourch.png"></image>
+    <input class="top-input" placeholder="搜索相关文章" placeholder-class="pla"></input>
+  </view>
+
+  <view class="courch-right">
+    <image src="../image/xin.png"></image>
+    <text>3</text>
+  </view>
+</view>
+
+<!-- 轮播图 -->
+<view class="container-img">
+  <swiper class="swiper-one" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" previous-margin="30rpx" next-margin="30rpx">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item class="swiper-item1">
+            <view class="swiper-item">
+              <image src=" {{item}}" mode="scaleToFill"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+
+<!-- 图标导航 -->
+<view class="tubiao">
+  <view class="tubiao-one">
+    <image src="../image/renwu1.png"></image>
+    <view>任务进度</view>
+  </view>
+  <view class="tubiao-one">
+    <image src="../image/renwu2.png"></image>
+    <view>药品申请</view>
+  </view>
+  <view class="tubiao-one">
+    <image src="../image/renwu3.png"></image>
+    <view>提交拜访</view>
+  </view>
+  <view class="tubiao-one">
+    <image src="../image/renwu4.png"></image>
+    <view>外勤打卡</view>
+  </view>
+</view>
+
+<!-- 图片导航 -->
+<view class="img-nav">
+  <view class="img-one">
+    <image src="http://img.mp.itc.cn/upload/20160419/711901815460486d93f5d4fd93532d71_th.jpg"></image>
+    <view class="meng">
+      <text>高毛产品：利润高，卖的</text>
+    </view>
+  </view>
+
+  <view class="img-one">
+    <image src="http://img.mp.itc.cn/upload/20160419/711901815460486d93f5d4fd93532d71_th.jpg"></image>
+    <view class="meng">
+      <text>全国独家：竞品少，快来抢</text>
+    </view>
+  </view>
+</view>
+
+<!-- 选项导航 -->
+<view  class="xuan">
+  <block wx:for="{{topics}}" wx:key="{{index}}">
+    <view class="xuan-one" bindtap='clickTopItem' data-ind="{{index}}">
+      <view class="xuan-text {{indexSelect==index?'actived':''}}">{{item}}</view>
+      <view class="line" wx:if="{{indexSelect==index}}"></view>
+    </view>
+  </block>
+</view>
+<!-- 线 -->
+<view class="divider"></view>
+
+
+
+<!-- 内容 -->
+<view class="content">
+  <view class="cont-one">
+    <view class="one-text">
+      <view>药品采集全国铺开之势火正旺！</view>
+      <view>多地已官宣或酝酿跟标，药企降价降价</view>
+    </view>
+    <view class="one-nav">
+      <view class="nav-img">斯坦森</view>
+      <view class="nav-img">
+         <image class="image1" src="../image/yanjing.png"></image>
+         <view>3251</view>
+      </view>
+      <view class="nav-img">
+         <image class="image2" src="../image/xiaoxi.png"></image>
+         <view>78</view>
+      </view>
+    </view>
+  </view>
+  <view class="cont-two">
+    <image src="http://img.juimg.com/tuku/yulantu/110920/2506-11092000202124.jpg"></image>
+  </view>
+</view>
+
+<view class="content">
+  <view class="cont-one">
+    <view class="one-text">
+      <view>药品采集全国铺开之势火正旺！</view>
+      <view>多地已官宣或酝酿跟标，药企降价降价</view>
+    </view>
+    <view class="one-nav">
+      <view class="nav-img">斯坦森</view>
+      <view class="nav-img">
+         <image class="image1" src="../image/yanjing.png"></image>
+         <view>3251</view>
+      </view>
+      <view class="nav-img">
+         <image class="image2" src="../image/xiaoxi.png"></image>
+         <view>78</view>
+      </view>
+    </view>
+  </view>
+  <view class="cont-two">
+    <image src="http://img008.hc360.cn/m1/M03/59/E5/wKhQb1Q0bjeEfJALAAAAAKWWW_U314.jpg"></image>
+  </view>
+</view>
+
+<!-- 空白 -->
+<view class="mengban"></view>
+<!-- 底部导航栏 -->
+<view class="bottom-nav">
+  <view class="nav-first">
+    <image src="../image/home.png"></image>
+    <view class="first-zhu">主页</view>
+  </view>
+  <view class="nav-first">
+    <image src="../image/direnwu.png"></image>
+    <view>任务</view>
+  </view>
+  <view class="nav-first">
+    <image src="../image/wode.png"></image>
+    <view>我的</view>
+  </view>
+</view>

@@ -1,0 +1,140 @@
+/* pages/detail/detail.wxss */
+.custom{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 45px;
+  background: #eef3fa;
+  z-index: 999;
+  text-align: center;
+}
+
+.empty_custom{
+  height: 45px;
+  width: 100%;
+}
+/* 标题 */
+.title{
+  width: 750rpx;
+  height: 100rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+.title view{
+  line-height: 100rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+  font-family: "微软雅黑";
+  color: #333;
+}
+
+/* 收藏 */
+.shou{
+  width: 710rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+.shou-one{
+  width: 500rpx;
+  display: flex;
+  font-size: 30rpx;
+}
+.one-img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.one-two{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30rpx;
+}
+.two-one{
+  width: 250rpx;
+  display: flex;
+  color: #9d9d9d;
+  font-size: 26rpx;
+  justify-content: space-between;
+}
+.shou-two{
+  width: 100rpx;
+  height: 80rpx;
+  background: #fc5757;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  padding: 0 35rpx;
+  color: #fff;
+  margin-right: 20rpx;
+}
+
+/* 内容 */
+.content{
+  width: 710rpx;
+  padding: 10rpx 20rpx;
+}
+.cont-tit{
+  font-size: 35rpx;
+  color: #fa5e5e;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.cont-img image{
+  width: 100%;
+  height: 500rpx;
+}
+.cont-text{
+  font-size: 33rpx;
+  color: #5c5c5c;
+}
+.cont-text text{
+  line-height: 55rpx;
+  font-family: "微软雅黑"；
+}
+
+/* 空白 */
+.mengban{
+  width: 750rpx;
+  height: 100rpx;
+}
+/* 底部导航栏 */
+.bottom-nav{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 20rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0rpx -2rpx 10rpx 0rpx rgba(216, 211, 211,0.9);
+  color: #a3a3a3;
+}
+.nav-first image{
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.nav-one{
+  background: #f7f7f7;
+  border-radius: 30rpx;
+  text-align: left;
+}
+.nav-one input{
+  width: 400rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+}
+.nav-one .pla{
+  font-size: 30rpx;
+}

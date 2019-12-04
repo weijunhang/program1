@@ -1,0 +1,68 @@
+<!--pages/detail/detail.wxml-->
+<!-- 顶部导航栏 -->
+<view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<!-- 标题 -->
+<view class="title">
+  <view>药品采集全国铺开之势火正旺！</view>
+</view>
+
+<!-- 收藏 -->
+<view class="shou">
+  <view class="shou-one">
+    <view class="one-img">
+      <image src="http://images.liqucn.com/img/h21/h84/img_localize_6563495a2344657efccd11787dea903d_400x400.png"></image>
+    </view>
+    <view class="one-two">
+      <view>斯坦森</view>
+      <view class="two-one">
+        <view>1372收藏</view>
+        <view>13小时前</view>
+      </view>
+    </view>
+  </view>
+  <view class="shou-two">收藏</view>
+</view>
+
+
+<!-- 内容 -->
+<view class="content">
+  <view class="cont-tit">
+    <text>这是一个大变革的时代。</text>
+  </view>
+  <view class="cont-text">
+    <text>从2015年的7.22，到2018年的12.6，再到2019年的77事件，中国医药行业似乎始终弥漫着一股紧张的气氛。药物临床试验数据自查核查革了一批企业的命，自此之后医药行业“被迫”开始清醒。</text>
+  </view>
+  <view class="cont-img">
+    <image src="https://f11.baidu.com/it/u=3170002829,3914408981&fm=72"></image>
+  </view>
+  <view class="cont-tit">
+    <text>每个企业都面临着巨大的挑战与压力。</text>
+  </view>
+  <view class="cont-text">
+    <text>但其背后的核心逻辑，是中国医药产业发展的旧有规则被摒弃，新的规则正席卷产业每个角落的必然。在这样一个产业动荡的大时代背景下面，</text>
+  </view>
+</view>
+
+
+<!-- 空白 -->
+<view class="mengban"></view>
+<!-- 底部导航栏 -->
+<view class="bottom-nav">
+  <view class="nav-one">
+    <input class="top-input" placeholder="我来说两句..." placeholder-class="pla"></input>
+  </view>
+  <view class="nav-first">
+    <image src="../image/xiaoxi.png"></image>
+    <view class="first-zhu">1321</view>
+  </view>
+  <view class="nav-first">
+    <image src="../image/fenxiang.png"></image>
+    <view>分享</view>
+  </view>
+  <view class="nav-first">
+    <image src="../image/zan.png"></image>
+    <view>387</view>
+  </view>
+</view>
