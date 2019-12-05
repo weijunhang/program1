@@ -19,9 +19,12 @@ Page({
     indexSelect:0,
   },
   //事件处理函数
-  bindViewTap: function() {
-    
+  goto: function() {
+    wx.navigateTo({
+      url: '../detail/detail'
+    })
   },
+
   clickTopItem: function (res) {
     //获得传递过来的数据
     let id = res.currentTarget.dataset.ind;

@@ -1,8 +1,11 @@
 <!--pages/detail/detail.wxml-->
 <!-- 顶部导航栏 -->
 <view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
+  <image src="../image/leftjiantou.png" bindtap="goback"></image>
 </view>
 <view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+
+
 <!-- 标题 -->
 <view class="title">
   <view>药品采集全国铺开之势火正旺！</view>
